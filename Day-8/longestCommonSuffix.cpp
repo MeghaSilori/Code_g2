@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
-string lcs(vector<string> &s){
-    for(int i=0; i<s.size(); i++){
-        reverse(s[i].begin(), s[i].end());
+string lcs(vector<string> &strs){
+    for(int i=0; i<strs.size(); i++){
+        reverse(strs[i].begin(), strs[i].end());
     }
     sort(strs.begin(), strs.end());
     int minl = min(strs[0].size(),strs[strs.size()-1].size());
